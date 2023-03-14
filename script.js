@@ -13,10 +13,7 @@ function checkOperator() {
  }
 resetOperatorSelection();
 }
-
 checkOperator();
-
-
 
 //4. create  a function to perform our calculations based on the operator selected by the user
 function performOperation() {
@@ -50,8 +47,6 @@ function performOperation() {
       performOperation();
 }
  
- 
-
 //5. create a function to reset the input of operator selection and restart the process when there is a wrong selection of operator
 function resetOperatorSelection() {
     operator = prompt('Select an operator, a. Addition, b. Subtractin, c. Division, d. Multiplication: ');
