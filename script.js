@@ -2,7 +2,7 @@
 const prompt = require('prompt-sync')();
 
 //2. Create a prompt for user to select the type of operation to perform
-let operator = prompt('Select an operator, a. Addition, b. Subtractin, c. Division, d. Multiplication: ');
+let operator = prompt('Select an operator, a. Addition, b. Subtraction, c. Division, d. Multiplication: ').toLowerCase();
 
 //3. Create a function that checks the user selection of operator if the operator selected is correct proceed else ask the user to input a correct selector and start Over
 function checkOperator() {
@@ -34,15 +34,15 @@ function performOperation() {
         return addition;
       } else if (operator === 'b'){
         let substraction = firstInput - secondInput
-        console.log(`The sum is ${substraction}`);
+        console.log(`The difference is ${substraction}`);
         return substraction;
        } else if (operator === 'c'){
             let division = firstInput / secondInput
-            console.log(`The sum is ${division}`);
+            console.log(`The quotient is ${division}`);
             return division;
         } else if (operator === 'd'){
             let multiplication = firstInput * secondInput
-            console.log(`The sum is ${multiplication}`);
+            console.log(`The product is ${multiplication}`);
             return multiplication;
         } else{
             console.log('Please insert a valid number or input');
